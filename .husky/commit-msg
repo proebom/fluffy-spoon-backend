@@ -1,0 +1,2 @@
+echo "Checking commit msg";
+pnpm dlx commitlint --edit "$1";
