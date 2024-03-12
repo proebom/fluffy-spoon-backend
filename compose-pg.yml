@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  fluffy_spoon_postgres_local:
+    image: postgres:15.3-alpine
+    container_name: fluffy_spoon_postgres_local
+    restart: always
+    environment:
+      - POSTGRES_USER=fluffy_spoon_admin
+      - POSTGRES_PASSWORD=fluffy_spoon_password
+      - POSTGRES_DB=fluffy_spoon_local
+    ports:
+      - '5432:5432'
+    volumes:
+      - fluffy_spoon_postgres_local:/var/lib/postgresql/data
+
+volumes:
+  fluffy_spoon_postgres_local:
