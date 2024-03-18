@@ -11,9 +11,9 @@ services:
       - '3330:3330'
     environment:
       - DATABASE_PORT=5432
-      - DATABASE_USERNAME=cm_db_admin
-      - DATABASE_PASSWORD=cm_db_admin_password
-      - DATABASE_NAME=cm_db_local
+      - DATABASE_USERNAME=fluffy_spoon_admin
+      - DATABASE_PASSWORD=fluffy_spoon_password
+      - DATABASE_NAME=fluffy_spoon_local
       - DATABASE_CONNECTION=local
       - PORT=3330
       - NODE_ENV=production
